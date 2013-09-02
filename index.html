@@ -41,7 +41,7 @@
 						<h1>Pokemon <br> <span class="magenta">breakpoint</span></h1>
 						<br>
 						<br>
-						<h3>Des mediaqueries, du javascript et du css</h3>
+						<h3>Des mediaqueries, du Javascript et du css</h3>
 						<br>
 						<p>Rencontre ChtiJS #4</p>
 					</section>
@@ -64,22 +64,20 @@
 						</ul>
 					</section>
 				</section>
-				
+
 				<section>
 					<section data-background="img/2web.png">
-						
+
 					</section>
 					<section>
 						<h2>Récupérer la taille de l'écran</h2>
-						<h3 class="t-left"><span class="magenta">javascript</span></h3>
-						<p class="t-left">
-<pre><code>if ($(window).width() >= 640) {
+						<h3 class="t-left fragment"><span class="magenta">Javascript</span></h3>
+
+<pre class="fragment"><code>if ($(window).width() >= 640) {
     //desktop
 } else {
     //mobile
 }</code></pre>
-
-						</p>
 					</section>
 					<section>
 						<h2>Ce n'est pas une solution</h2>
@@ -91,13 +89,16 @@
 					<section>
 						<h2>#1</h2>
 						<h3>
-							Vous devez réserver <br> le <span class="cyan">style de la page</span> au <span class="magenta">CSS</span>
+							<span class="magenta">Javascript</span> pour le <span class="cyan">comportement</span>
+						</h3>
+						<h3>
+							<span class="magenta">CSS</span> pour le <span class="cyan">style</span> de la page
 						</h3>
 					</section>
 
 					<section>
 						<h2>#1</h2>
-						<p>SASS</p>
+						<p>breakpoint.sass</p>
 <pre><code>// Media Queries
 $small-screen: 641px;
 $medium-screen: 1280px;
@@ -109,15 +110,24 @@ $medium: "only screen and (min-width:#{$medium-screen})";
 $large: "only screen and (min-width:#{$large-screen})";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";</code></pre>
-<p>CSS</p>
+<p>breakpoint.css</p>
 <pre><code>
 @media only screen and (min-width: 641px) {
-...
+  ...
 }</code></pre>
-					</section>					
+					</section>
 				</section>
 
-
+				<section>
+					<section>
+						<h2>#2</h2>
+						<h3>Importance du naming</h3>
+					</section>
+					<section>
+						<h2>#2</h2>
+						<img src="img/sizes.jpg" alt="">
+					</section>
+				</section>
 
 				<section>
 					<section>
