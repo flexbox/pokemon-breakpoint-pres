@@ -98,7 +98,7 @@
 
 					<section>
 						<h2>#1</h2>
-						<p>breakpoint.sass</p>
+						<p>breakpoint.scss</p>
 <pre><code>// Media Queries
 $small-screen: 641px;
 $medium-screen: 1280px;
@@ -125,8 +125,43 @@ $portrait: "only screen and (orientation: portrait)";</code></pre>
 					</section>
 					<section>
 						<h2>#2</h2>
+						<img src="img/sizes_techno.jpg" alt="">
+					</section>
+					<section>
+						<h2>#2</h2>
+						<img src="img/sizes_pkm.jpg" alt="">
+					</section>
+					<section>
+						<h2>#2</h2>
 						<img src="img/sizes.jpg" alt="">
 					</section>
+					<section>
+						<h2>#2</h2>
+						<h3>Placer un élément <span class="magenta">#media-query--name</span>	dans le DOM</h3>
+						<p>breakpoint.scss</p>
+<pre><code>
+#media-query--name:after{
+  content: "salameche";
+}
+
+@media #{$small} {
+  #media-query--name:after{
+    content: "reptincel";
+  }
+}
+
+@media #{$medium} {
+  #media-query--name:after{
+    content: "dracaufeu";
+}
+</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<h1>
+						<a href="http://pokemonbreakpoint.fr/" target="_blank">DEMO TIME</a>
+					</h1>
 				</section>
 
 				<section>
