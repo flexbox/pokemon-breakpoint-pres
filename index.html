@@ -166,6 +166,47 @@ $portrait: "only screen and (orientation: portrait)";</code></pre>
 
 				<section>
 					<section>
+						<h2>
+							#3
+						</h2>
+						<h3>Comment récupérer <br><span class="cyan">la valeur</span> de mon nommage ?</h3>
+					</section>
+
+					<section>
+						<h2>
+							#3
+						</h2>
+<pre><code>
+	window
+		.getComputedStyle('#media-query--name',':after')
+		.getPropertyValue('content');
+	</code></pre>
+					</section>
+
+					<section>
+						<h2>
+							#3
+						</h2>
+						<h3>Des test simplifiés</h3>
+<pre><code>
+if (pokemon == 'salameche') {
+  alert("Je suis le pokemon " + pokemon + " correspondant à un smartphone");
+};
+
+if (pokemon == 'reptincel') {
+  alert("Je suis le pokemon " + pokemon + " correspondant à une tablette");
+};
+
+if (pokemon == 'dracaufeu') {
+  alert("Je suis le pokemon " + pokemon + " correspondant à PC");
+};
+</code></pre>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
 						<h2>Pour résumer</h2>
 						<ol>
 							<li class="fragment">Importance du nommage</li>
